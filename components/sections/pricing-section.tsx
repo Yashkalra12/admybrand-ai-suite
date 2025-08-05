@@ -5,6 +5,7 @@ import { useState } from "react"
 import { GlassCard } from "@/components/ui/glass-card"
 import { NeonButton } from "@/components/ui/neon-button"
 import { Check, Star, Zap } from "lucide-react"
+import { config } from "@/lib/config"
 
 const pricingTiers = [
   {
@@ -54,6 +55,10 @@ const pricingTiers = [
 
 export function PricingSection() {
   const [isAnnual, setIsAnnual] = useState(false)
+
+  const openBookingLink = () => {
+    window.open(config.booking.demoUrl, '_blank', 'noopener,noreferrer')
+  }
 
   return (
     <section className="py-20 px-4 relative overflow-hidden section-container">
@@ -154,7 +159,12 @@ export function PricingSection() {
                     ))}
                   </div>
 
-                  <NeonButton className="w-full" variant={tier.popular ? "primary" : "ghost"} size="lg">
+                  <NeonButton 
+                    className="w-full" 
+                    variant={tier.popular ? "primary" : "ghost"} 
+                    size="lg"
+                    onClick={openBookingLink}
+                  >
                     {tier.popular && <Zap className="w-4 h-4 mr-2" />}
                     {tier.cta}
                   </NeonButton>
@@ -174,7 +184,10 @@ export function PricingSection() {
         >
           <p className="text-muted-foreground">
             Need a custom quote?
-            <button className="ml-2 text-primary hover:text-primary/80 underline transition-colors">
+            <button 
+              className="ml-2 text-primary hover:text-primary/80 underline transition-colors"
+              onClick={openBookingLink}
+            >
               Try our interactive pricing calculator
             </button>
           </p>

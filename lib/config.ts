@@ -8,7 +8,7 @@ export const config = {
     // - Acuity Scheduling: https://your-company.acuityscheduling.com/
     // - Cal.com: https://cal.com/your-username
     // - HubSpot Meetings: https://meetings.hubspot.com/your-username
-    demoUrl: "https://calendly.com/demo/admybrand-ai-suite-demo",
+    demoUrl: "https://cal.com/yash-kalra-wqs4jz/demo-admybrand-ai-suite",
     
     // Alternative booking services you can use:
     alternatives: {

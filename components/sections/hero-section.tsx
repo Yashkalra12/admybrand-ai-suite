@@ -41,7 +41,13 @@ export function HeroSection() {
           className="flex flex-col sm:flex-row gap-6 justify-center items-center"
         >
           {/* Buttons with consistent styling */}
-          <NeonButton variant="primary" size="lg" className="px-10 py-4 text-lg group" glow>
+          <NeonButton 
+            variant="primary" 
+            size="lg" 
+            className="px-10 py-4 text-lg group" 
+            glow
+            onClick={openBookingLink}
+          >
             <Zap className="w-5 h-5 mr-3" />
             Get Started Free
             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 transition-transform duration-200" />
