@@ -32,9 +32,9 @@ const footerLinks = {
 }
 
 const socialLinks = [
-  { name: "Twitter", icon: Twitter, href: "#" },
-  { name: "LinkedIn", icon: Linkedin, href: "#" },
-  { name: "YouTube", icon: Youtube, href: "#" },
+  { name: "Twitter", icon: Twitter, href: "https://x.com/admybrand?lang=en" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/admybrand?originalSubdomain=in" },
+  { name: "YouTube", icon: Youtube, href: "https://www.youtube.com/channel/UCEKgVQ1MeZx3lpyDqGtW30g" },
 ]
 
 export function Footer() {
@@ -123,9 +123,9 @@ export function Footer() {
                 <span>contact@admybrand.com</span>
               </div>
 
-              <p className="text-muted-foreground text-center">© 2024 ADmyBRAND AI Suite. All rights reserved.</p>
+              <p className="text-muted-foreground text-center">© 2025 ADmyBRAND AI Suite. All rights reserved.</p>
 
-              <div className="text-sm text-muted-foreground">Made with ❤️ and AI</div>
+              <div className="text-sm text-muted-foreground">Made with ❤️ by Yash</div>
             </div>
           </motion.div>
         </GlassCard>
