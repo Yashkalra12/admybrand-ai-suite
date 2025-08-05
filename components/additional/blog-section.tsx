@@ -9,15 +9,15 @@ const blogPosts = [
   {
     title: "The Future of AI in Marketing: 2025 Predictions",
     excerpt: "Discover the latest trends and technologies that will shape marketing automation in the coming year.",
-    image: "/placeholder.svg?height=200&width=400&text=AI+Marketing",
+    image: "/images/cs1.jpeg",
     date: "Dec 15, 2024",
     readTime: "5 min read",
     category: "AI Trends",
   },
   {
     title: "How to Implement Conversational AI for Better Customer Engagement",
-    excerpt: "A comprehensive guide to deploying chatbots and AI assistants that actually convert leads.",
-    image: "/placeholder.svg?height=200&width=400&text=Chatbot+Guide",
+    excerpt: "A comprehensive guide to deploying chatbots and AI assistants that actually convert leads and drive sales.",
+    image: "/images/cs2.jpeg",
     date: "Dec 12, 2024",
     readTime: "8 min read",
     category: "Implementation",
@@ -25,7 +25,7 @@ const blogPosts = [
   {
     title: "ROI Optimization: Measuring Success with AI-Powered Analytics",
     excerpt: "Learn how to track and optimize your marketing ROI using advanced AI analytics and predictive modeling.",
-    image: "/placeholder.svg?height=200&width=400&text=Analytics+ROI",
+    image: "/images/cs3.jpeg",
     date: "Dec 10, 2024",
     readTime: "6 min read",
     category: "Analytics",

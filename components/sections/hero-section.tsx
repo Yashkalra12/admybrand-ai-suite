@@ -29,11 +29,10 @@ export function HeroSection() {
           </h1>
 
           <p className="text-lg md:text-xl lg:text-2xl text-foreground mb-16 max-w-4xl mx-auto leading-relaxed font-light">
-            Drive growth, automate campaigns, and supercharge ROI with the #1 AI-powered marketing toolkit designed for
+            Drive growth, automate campaigns, and supercharge ROI with the  #1 <br /> AI-powered marketing toolkit designed for
             the future.
           </p>
         </motion.div>
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

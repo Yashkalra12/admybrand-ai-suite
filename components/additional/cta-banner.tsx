@@ -14,8 +14,7 @@ export function CTABanner() {
   return (
     <section className="py-16 px-4 relative overflow-hidden">
       {/* Background effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <GlassCard variant="panel" glow={true} className="p-8 md:p-12">
