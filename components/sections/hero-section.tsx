@@ -6,7 +6,7 @@ import { Zap, ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 pt-20 section-container">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 pt-20 section-container">
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

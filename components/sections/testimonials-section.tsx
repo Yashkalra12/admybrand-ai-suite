@@ -45,7 +45,7 @@ export function TestimonialsSection() {
   }
 
   return (
-    <section className="py-20 px-4 relative overflow-hidden section-container">
+    <section id="testimonials" className="py-20 px-4 relative overflow-hidden section-container">
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
