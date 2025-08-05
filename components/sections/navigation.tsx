@@ -37,16 +37,10 @@ export function Navigation() {
             Benefits
           </button>
           <button
-            onClick={() => scrollToSection('testimonials')}
-            className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
-          >
-            Case Studies
-          </button>
-          <button
             onClick={() => scrollToSection('blog')}
             className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
           >
-            Blog
+            Case Studies
           </button>
         </div>
 
