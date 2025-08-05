@@ -4,51 +4,53 @@
 
 @layer base {
   :root {
-    /* Enhanced High-Contrast ADmyBRAND AI Suite Theme */
+    /* ADmyBRAND AI Suite Theme - Brand Colors */
     --background: 220 100% 2%; /* Ultra dark - #000408 */
-    --foreground: 200 100% 98%; /* Pure white - #fafeff */
+    --foreground: 0 0% 100%; /* Pure white - #ffffff */
 
     --muted: 220 40% 6%; /* Dark muted - #0a0f14 */
-    --muted-foreground: 200 80% 85%; /* High contrast - #b3e5ff */
+    --muted-foreground: 220 40% 85%; /* High contrast - #b3e5ff */
 
     --card: 220 50% 8% / 0.4; /* Semi-transparent dark cards */
-    --card-foreground: 200 100% 96%;
+    --card-foreground: 0 0% 96%;
 
     --popover: 220 50% 8% / 0.9;
-    --popover-foreground: 200 100% 96%;
+    --popover-foreground: 0 0% 96%;
 
-    /* Primary: Ultra-bright Neon Cyan */
-    --primary: 190 100% 60%; /* Brighter - #00f5ff */
-    --primary-foreground: 220 100% 1%; /* Ultra dark for contrast */
+    /* Primary: #415a98 - Brand Blue */
+    --primary: 220 40% 42%; /* #415a98 */
+    --primary-foreground: 0 0% 100%;
 
-    /* Secondary: Ultra-bright Electric Purple */
-    --secondary: 250 100% 65%; /* Brighter - #4000ff */
-    --secondary-foreground: 200 100% 98%;
+    /* Secondary: #953e98 - Brand Purple */
+    --secondary: 300 42% 42%; /* #953e98 */
+    --secondary-foreground: 0 0% 100%;
 
-    /* Accent: Ultra-bright Cyan */
-    --accent: 180 100% 70%; /* Brighter - #00ffe6 */
-    --accent-foreground: 220 100% 2%;
+    /* Accent: #cc2487 - Brand Pink */
+    --accent: 330 72% 47%; /* #cc2487 */
+    --accent-foreground: 0 0% 100%;
 
-    --border: 200 80% 40% / 0.3; /* More visible borders */
+    /* Destructive: #e43c64 - Brand Red */
+    --destructive: 340 75% 56%; /* #e43c64 */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 40% 40% / 0.3; /* More visible borders */
     --input: 220 50% 8% / 0.8;
-    --ring: 190 100% 60%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --ring: 220 40% 42%;
 
     --radius: 1rem;
 
-    /* Enhanced glassmorphism variables */
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-bg-strong: rgba(255, 255, 255, 0.08);
-    --glass-border: rgba(255, 255, 255, 0.2);
-    --glass-border-strong: rgba(255, 255, 255, 0.3);
+    /* Enhanced glassmorphism variables with brand colors */
+    --glass-bg: rgba(65, 90, 152, 0.05); /* Primary blue tint */
+    --glass-bg-strong: rgba(149, 62, 152, 0.08); /* Secondary purple tint */
+    --glass-border: rgba(65, 90, 152, 0.2); /* Primary blue border */
+    --glass-border-strong: rgba(149, 62, 152, 0.3); /* Secondary purple border */
     --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     --glass-shadow-strong: 0 16px 64px rgba(0, 0, 0, 0.6);
 
-    /* Neon glow variables */
+    /* Neon glow variables with brand colors */
     --neon-glow: 0 0 20px hsl(var(--primary)), 0 0 40px hsl(var(--primary)), 0 0 60px hsl(var(--primary));
     --neon-glow-secondary: 0 0 20px hsl(var(--secondary)), 0 0 40px hsl(var(--secondary));
+    --neon-glow-accent: 0 0 20px hsl(var(--accent)), 0 0 40px hsl(var(--accent));
     --neon-glow-strong: 0 0 30px hsl(var(--primary)), 0 0 60px hsl(var(--primary)), 0 0 90px hsl(var(--primary));
   }
 }
@@ -93,6 +95,23 @@
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border-strong);
     box-shadow: var(--glass-shadow-strong);
+  }
+
+  /* Brand-specific gradient utilities */
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+  }
+
+  .gradient-border {
+    border: 1px solid;
+    border-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent))) 1;
   }
 }
 
