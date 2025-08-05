@@ -7,20 +7,20 @@ A stunning, futuristic landing page for ADmyBRAND AI Suite - an AI-powered marke
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.17-38B2AC?style=for-the-badge&logo=tailwind-css)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-Latest-purple?style=for-the-badge)
 
-## 🚀 Live Demo
+## Live Demo
 
-**[View Live Demo](https://admybrand-ai-suite.vercel.app)** *(Deploy to Vercel for instant preview)*
+**[View Live Demo](https://admybrand-ai-suite-five.vercel.app/)** - Fully deployed and live
 
-## ✨ Features
+## Features
 
-### 🎨 **Design & UX**
+### Design & UX
 - **Glassmorphism Design**: Modern glass effects with blur and transparency
 - **Brand Integration**: ADmyBRAND colors (`#415a98`, `#953e98`, `#cc2487`, `#e43c64`)
 - **Smooth Animations**: Framer Motion powered transitions
 - **Responsive Design**: Mobile-first approach with flawless cross-device experience
 - **Neon Effects**: Subtle glow effects with brand colors
 
-### 📱 **Landing Page Sections**
+### Landing Page Sections
 - **Hero Section**: Compelling headline with dual CTAs ("Get Started Free", "Book a Call")
 - **Features Section**: 6+ AI-powered features with interactive cards
 - **Pricing Section**: 3 tiers with monthly/annual toggle and 20% discount
@@ -31,17 +31,17 @@ A stunning, futuristic landing page for ADmyBRAND AI Suite - an AI-powered marke
 - **Blog Section**: Case studies with custom images
 - **Footer**: Social media links and company information
 
-### 🔗 **Booking Integration**
+### Booking Integration
 - **Cal.com Integration**: All CTAs link to booking system
 - **Centralized Config**: Easy booking URL management
 - **Security**: Opens in new tab with `noopener,noreferrer`
 
-### 🎯 **Hyperlocal Advertising**
+### Hyperlocal Advertising
 - **15 Location Types**: Airport, Bus Stations, Metro, Railway, City Centers, Landmarks, Religious Centers, Trucks, Buses, Autos, Cabs, Vans, Trains, Cars
 - **Horizontal Scrolling**: Smooth scroll for additional locations
 - **Interactive Cards**: Hover effects and animations
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 14.2.16 with App Router
 - **Language**: TypeScript 5.0
@@ -52,7 +52,7 @@ A stunning, futuristic landing page for ADmyBRAND AI Suite - an AI-powered marke
 - **Forms**: React Hook Form with Zod validation
 - **Deployment**: Vercel (recommended)
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Node.js 18+ 
@@ -94,7 +94,7 @@ pnpm dev
 http://localhost:3000
 ```
 
-## 🎨 Customization
+## Customization
 
 ### Brand Colors
 Update colors in `app/globals.css`:
@@ -124,7 +124,7 @@ export const config = {
 - **Testimonials**: `components/sections/testimonials-section.tsx`
 - **FAQ**: `components/sections/faq-section.tsx`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 admybrand-ai-suite/
@@ -146,7 +146,7 @@ admybrand-ai-suite/
 └── styles/               # Additional styles
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 
@@ -173,34 +173,34 @@ npm run build
 railway up
 ```
 
-## 🎯 Key Features
+## Key Features
 
-### 🎨 **Design System**
+### Design System
 - **40+ Reusable Components**: Complete UI component library
 - **Glassmorphism Effects**: Modern glass design with blur effects
 - **Brand Integration**: Consistent ADmyBRAND color scheme
 - **Responsive Design**: Mobile-first with touch-friendly interactions
 
-### 📱 **User Experience**
+### User Experience
 - **Smooth Scrolling**: Navigation with scroll-to-section
 - **Interactive Elements**: Hover effects and micro-animations
 - **Loading States**: Optimized performance with lazy loading
 - **Accessibility**: WCAG compliant with keyboard navigation
 
-### 🔧 **Technical Excellence**
+### Technical Excellence
 - **TypeScript**: Full type safety
 - **Performance**: Optimized images and bundle size
 - **SEO Ready**: Meta tags and structured data
 - **Analytics Ready**: Google Analytics integration ready
 
-## 📊 Performance
+## Performance
 
 - **Lighthouse Score**: 95+ across all metrics
 - **First Contentful Paint**: < 1.5s
 - **Largest Contentful Paint**: < 2.5s
 - **Cumulative Layout Shift**: < 0.1
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -208,24 +208,24 @@ railway up
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🏢 About ADmyBRAND
+## About ADmyBRAND
 
 ADmyBRAND is an AI & analytics-driven Web4.0 ad exchange for advertisements on outdoor media, influencer marketing, digital, mobile, radio, TV, newspaper & all types of ad spaces. It's an innovative programmatic & hands-free advertising and big data analytics solution designed to disrupt the traditional media ad placement industry.
 
 **Mission**: To become the virtual assistant to every marketing professional in the world, empowering brand owners and brand managers to manage their marketing campaigns in just a few clicks within minutes.
 
-## 📞 Support
+## Support
 
 - **Email**: contact@admybrand.com
 - **Website**: https://admybrand.com
 - **LinkedIn**: [ADmyBRAND](https://www.linkedin.com/company/admybrand)
 - **YouTube**: [ADmyBRAND Channel](https://www.youtube.com/channel/UCEKgVQ1MeZx3lpyDqGtW30g)
 
-## 🎉 Acknowledgments
+## Acknowledgments
 
 - **Design Inspiration**: Modern SaaS landing page trends
 - **Icons**: [Lucide React](https://lucide.dev/)
@@ -234,4 +234,4 @@ ADmyBRAND is an AI & analytics-driven Web4.0 ad exchange for advertisements on o
 
 ---
 
-**Built with ❤️ for ADmyBRAND AI Suite** 
+**Built with love for ADmyBRAND AI Suite** 
