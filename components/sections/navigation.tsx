@@ -2,6 +2,7 @@
 
 import { NeonButton } from "@/components/ui/neon-button"
 import { Bot } from "lucide-react"
+import { config } from "@/lib/config"
 
 export function Navigation() {
   const scrollToSection = (sectionId: string) => {
@@ -13,6 +14,10 @@ export function Navigation() {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const openBookingLink = () => {
+    window.open(config.booking.demoUrl, '_blank', 'noopener,noreferrer')
   }
 
   return (
@@ -45,7 +50,12 @@ export function Navigation() {
         </div>
 
         {/* CTA Button */}
-        <NeonButton size="sm" className="px-6 py-2" glow>
+        <NeonButton 
+          size="sm" 
+          className="px-6 py-2" 
+          glow
+          onClick={openBookingLink}
+        >
           Book a call
         </NeonButton>
       </div>

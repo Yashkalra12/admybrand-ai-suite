@@ -3,8 +3,13 @@
 import { motion } from "framer-motion"
 import { NeonButton } from "@/components/ui/neon-button"
 import { Zap, ArrowRight } from "lucide-react"
+import { config } from "@/lib/config"
 
 export function HeroSection() {
+  const openBookingLink = () => {
+    window.open(config.booking.demoUrl, '_blank', 'noopener,noreferrer')
+  }
+
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 pt-20 section-container">
       <div className="relative z-10 max-w-6xl mx-auto text-center">
@@ -41,7 +46,13 @@ export function HeroSection() {
             Get Started Free
             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 transition-transform duration-200" />
           </NeonButton>
-          <NeonButton variant="primary" size="lg" className="px-10 py-4 text-lg" glow>
+          <NeonButton 
+            variant="primary" 
+            size="lg" 
+            className="px-10 py-4 text-lg" 
+            glow
+            onClick={openBookingLink}
+          >
             Book a Call
           </NeonButton>
         </motion.div>

@@ -4,8 +4,13 @@ import { motion } from "framer-motion"
 import { NeonButton } from "@/components/ui/neon-button"
 import { User } from "lucide-react"
 import { GlassCard } from "@/components/ui/glass-card" // Import GlassCard
+import { config } from "@/lib/config"
 
 export function CTABanner() {
+  const openBookingLink = () => {
+    window.open(config.booking.demoUrl, '_blank', 'noopener,noreferrer')
+  }
+
   return (
     <section className="py-16 px-4 relative overflow-hidden">
       {/* Background effects */}
@@ -37,7 +42,11 @@ export function CTABanner() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <NeonButton size="lg" className="px-8 py-4 text-lg group">
+              <NeonButton 
+                size="lg" 
+                className="px-8 py-4 text-lg group"
+                onClick={openBookingLink}
+              >
                 <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary/30 to-secondary/30 border border-primary/50 flex items-center justify-center mr-3">
                   <User className="w-5 h-5 text-primary-foreground" /> {/* Changed icon color for visibility */}
                 </div>
