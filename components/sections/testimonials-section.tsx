@@ -8,7 +8,7 @@ import Image from "next/image"
 
 const testimonials = [
   {
-    photo: "/placeholder.svg?height=80&width=80&text=Anna",
+    photo: "/images/avatars/annette-black.png",
     name: "Anna L.",
     title: "Marketing Director",
     company: "TechCorp",
@@ -16,7 +16,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    photo: "/placeholder.svg?height=80&width=80&text=Jay",
+    photo: "/images/avatars/cameron-williamson.png",
     name: "Jay P.",
     title: "Growth Manager",
     company: "StartupXYZ",
@@ -24,7 +24,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    photo: "/placeholder.svg?height=80&width=80&text=Neha",
+    photo: "/images/avatars/darlene-robertson.png",
     name: "Neha S.",
     title: "CMO",
     company: "Enterprise Inc",
@@ -91,16 +91,16 @@ export function TestimonialsSection() {
               </div>
 
               {/* Author */}
-              <div className="flex items-center justify-center gap-4">
-                <div className="relative">
+              <div className="flex items-center justify-center gap-6">
+                <div className="relative group">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/40 to-secondary/40 blur-xl group-hover:blur-2xl transition-all duration-300" />
                   <Image
                     src={testimonials[currentIndex].photo || "/placeholder.svg"}
                     alt={testimonials[currentIndex].name}
                     width={80}
                     height={80}
-                    className="rounded-full border-2 border-primary/30"
+                    className="relative rounded-full border-2 border-primary/50 shadow-lg group-hover:neon-glow transition-all duration-300"
                   />
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-transparent" />
                 </div>
 
                 <div className="text-left">
