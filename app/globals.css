@@ -17,8 +17,8 @@
     --popover: 220 50% 8% / 0.9;
     --popover-foreground: 0 0% 96%;
 
-    /* Primary: #415a98 - Brand Blue */
-    --primary: 220 40% 42%; /* #415a98 */
+    /* Primary: #415a98 - Brand Blue (Enhanced Neon) */
+    --primary: 220 60% 55%; /* Brighter #415a98 variant */
     --primary-foreground: 0 0% 100%;
 
     /* Secondary: #953e98 - Brand Purple */
@@ -47,11 +47,12 @@
     --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     --glass-shadow-strong: 0 16px 64px rgba(0, 0, 0, 0.6);
 
-    /* Neon glow variables with brand colors */
-    --neon-glow: 0 0 20px hsl(var(--primary)), 0 0 40px hsl(var(--primary)), 0 0 60px hsl(var(--primary));
-    --neon-glow-secondary: 0 0 20px hsl(var(--secondary)), 0 0 40px hsl(var(--secondary));
-    --neon-glow-accent: 0 0 20px hsl(var(--accent)), 0 0 40px hsl(var(--accent));
-    --neon-glow-strong: 0 0 30px hsl(var(--primary)), 0 0 60px hsl(var(--primary)), 0 0 90px hsl(var(--primary));
+    /* Minimal neon glow variables with brand colors */
+    --neon-glow: 0 0 8px hsl(var(--primary)), 0 0 16px hsl(var(--primary));
+    --neon-glow-secondary: 0 0 8px hsl(var(--secondary)), 0 0 16px hsl(var(--secondary));
+    --neon-glow-accent: 0 0 8px hsl(var(--accent)), 0 0 16px hsl(var(--accent));
+    --neon-glow-strong: 0 0 12px hsl(var(--primary)), 0 0 24px hsl(var(--primary));
+    --neon-glow-ultra: 0 0 16px hsl(var(--primary)), 0 0 32px hsl(var(--primary));
   }
 }
 
@@ -113,6 +114,28 @@
     border: 1px solid;
     border-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent))) 1;
   }
+
+  /* Ultra-neon effects */
+  .neon-glow {
+    box-shadow: var(--neon-glow);
+  }
+
+  .neon-glow-strong {
+    box-shadow: var(--neon-glow-strong);
+  }
+
+  .neon-glow-ultra {
+    box-shadow: var(--neon-glow-ultra);
+  }
+
+  .neon-text {
+    text-shadow: 0 0 6px hsl(var(--primary)), 0 0 12px hsl(var(--primary));
+  }
+
+  .neon-border {
+    border: 1px solid hsl(var(--primary));
+    box-shadow: inset 0 0 4px hsl(var(--primary)), 0 0 8px hsl(var(--primary));
+  }
 }
 
 /* Smooth animations */
@@ -158,4 +181,14 @@
 section {
   position: relative;
   z-index: 2;
+}
+
+/* Hide scrollbar for horizontal scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }

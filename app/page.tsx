@@ -12,7 +12,8 @@ import {
 import { 
   ContactSection,
   BlogSection,
-  CTABanner
+  CTABanner,
+  HyperlocalAdsSection
 } from "@/components/additional"
 
 export default function HomePage() {
@@ -29,6 +30,9 @@ export default function HomePage() {
       
       {/* Pricing Cards - 3 tiers with feature comparisons */}
       <PricingSection />
+      
+      {/* Hyperlocal Advertising Section */}
+      <HyperlocalAdsSection />
       
       {/* Testimonials Carousel - Customer reviews with photos */}
       <TestimonialsSection />

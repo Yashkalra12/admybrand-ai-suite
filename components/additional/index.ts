@@ -14,4 +14,7 @@ export { CTASection } from './cta-section'
 // Animation & Display Components
 export { AnimatedSection } from './animated-section'
 export { DashboardPreview } from './dashboard-preview'
-export { SocialProof } from './social-proof' 
+export { SocialProof } from './social-proof'
+
+// Hyperlocal Advertising
+export { HyperlocalAdsSection } from './hyperlocal-ads-section' 
