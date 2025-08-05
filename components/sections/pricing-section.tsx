@@ -10,8 +10,7 @@ import { config } from "@/lib/config"
 const pricingTiers = [
   {
     name: "Starter",
-    price: "$49",
-    period: "/mo",
+    monthlyPrice: 49,
     description: "Perfect for small businesses getting started with AI marketing",
     features: ["Up to 2 campaigns", "Basic AI insights", "Email support", "Standard dashboards", "5GB storage"],
     popular: false,
@@ -19,8 +18,7 @@ const pricingTiers = [
   },
   {
     name: "Pro",
-    price: "$129",
-    period: "/mo",
+    monthlyPrice: 129,
     description: "Advanced AI tools for growing marketing teams",
     features: [
       "10 campaigns",
@@ -142,8 +140,26 @@ export function PricingSection() {
                   <div className="text-center mb-8">
                     <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
                     <div className="flex items-baseline justify-center gap-1 mb-4">
-                      <span className="text-4xl font-bold gradient-text">{tier.price}</span>
-                      <span className="text-muted-foreground">{tier.period}</span>
+                      {tier.monthlyPrice ? (
+                        <>
+                          <span className="text-4xl font-bold gradient-text">
+                            ${isAnnual ? Math.round(tier.monthlyPrice * 12 * 0.8) : tier.monthlyPrice}
+                          </span>
+                          <span className="text-muted-foreground">
+                            {isAnnual ? "/year" : "/mo"}
+                          </span>
+                          {isAnnual && (
+                            <span className="text-sm text-secondary ml-2">
+                              (${Math.round(tier.monthlyPrice * 0.8)}/mo)
+                            </span>
+                          )}
+                        </>
+                      ) : (
+                        <>
+                          <span className="text-4xl font-bold gradient-text">{tier.price}</span>
+                          <span className="text-muted-foreground">{tier.period}</span>
+                        </>
+                      )}
                     </div>
                     <p className="text-muted-foreground">{tier.description}</p>
                   </div>
